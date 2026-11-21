@@ -1,0 +1,6 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Mất toàn bộ thông tin màu sắc trên phổ mô phỏng; khó phân biệt chất liệu và viền đồ vật sẫm màu trên nền ghế tối",object type,"Không phân biệt được màu túi/hộp; phải dựa vào hình khối để gán type hoặc chọn other nếu không chắc chắn"
+S04_ir,IR_sim,"Vùng bóng tối ở khoang sau xe không có hiện tượng phản xạ hồng ngoại tự nhiên (do IR mô phỏng); dây an toàn chìm hoàn toàn vào nền áo/ghế",seatbelt,"Không thấy dây an toàn nên giữ unknown theo quy tắc 4.4-1; ảnh RGB cùng cảnh cũng không thấy vì SVIRO không có dây"
+D02,real_IR,"Đèn LED NIR phản xạ tạo đốm lóa sáng (specular reflection) trên bề mặt tròng kính che khuất con ngươi và mí mắt",eye_left / eye_right,"Không phân biệt được mí mắt khép hay mở; gán eye=unknown thay vì đoán closed (quy tắc 4.5)"
+D04,real_IR,"Cường độ chiếu sáng của cụm đèn NIR suy giảm theo khoảng cách (vùng rìa cabin và phần cánh tay/đùi xa camera tối hơn vùng mặt)",hand side/on_wheel,"Phải tăng brightness/contrast trên giao diện CVAT để xác định ranh giới bàn tay; gán on_wheel=unknown nếu vùng tiếp xúc vô lăng bị tối"
+D05,real_IR,"Tài xế cúi đầu và góc chiếu NIR từ trần xe tạo bóng đổ che khuất hoàn toàn hốc mắt",face13 eye points,"Các điểm quanh mắt không nhìn thấy được; đánh cờ outside/occluded thay vì cố định vị trí điểm (quy tắc 4.6)"
